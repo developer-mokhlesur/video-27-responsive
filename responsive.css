@@ -1,0 +1,422 @@
+@media only screen and (max-width: 1250px){
+    .fixed-width {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .title-img {
+        width: 60%;
+        margin: 0 20%;
+        margin-bottom: 5%;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header .logo {
+        width: 26%;
+    }
+    header .menu {
+        width: 59%;
+    }
+    .content-right{
+        width: 70%;
+        margin: 5% 15%;
+    }
+    .video-left {
+        width: 70%;
+        margin: 0 15%;
+    }
+    .service h2 {
+        font-size: 2.6rem;
+    }
+    .service .service-item {
+        width: 48%;
+    }
+    .price-box .p-content .button button {
+        padding: 15px;
+    }
+    .price-box {
+        width: 50%;
+        margin: 0 25%;
+    }
+    .test-box {
+        width: 70%;
+        margin-right: 2%;
+        margin: 0 15%;
+        margin-bottom: 5%;
+    }
+    .box-img {
+        margin-left: 282px;
+    }
+}
+@media only screen and (max-width: 1085px){
+    .price-box {
+        width: 60%;
+        margin: 0 20%;
+        background: #fff;
+        transition: 0.5s;
+        margin-bottom: 2rem;
+    }
+    .team-box {
+        width: 48%;
+        margin-bottom: 2%;
+    }
+}
+@media only screen and (max-width: 1050px){
+    header .logo {
+        width: 27%;
+    }
+    header .menu {
+        width: 58%;
+    }
+
+}
+
+@media only screen and (max-width: 1020px){
+    header .logo {
+        width: 28%;
+    }
+    header .menu {
+        width: 57%;
+    }
+}
+@media only screen and (max-width: 992px){
+    header .logo {
+        width: 29%;
+    }
+    header .menu {
+        width: 56%;
+    }
+    .banner h3 {
+        font-size: 54.6px;
+        margin-bottom: 10px;
+    }
+    .banner button.btn-2 {
+        font-size: 17.8px;
+    }
+    .newsletter input {
+        width: 42%;
+    }
+    .title-left {
+        width: 100%;
+        text-align: center;
+    }
+    .title-right {
+        width: 100%;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .title-img img {
+        width: 50%;
+        height: 177px;
+    }
+    .box-img {
+        margin-left: 170px;
+    }
+    .testimonial h3 {
+        font-size: 2rem;
+    }
+    .box-img {
+        margin-left: 249px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    header .logo {
+        width: 30%;
+    }
+    header .menu {
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 930px){
+    header .logo {
+        width: 31%;
+    }
+    header .menu {
+        width: 54%;
+    }
+    header .button .btn-1 {
+        padding: 10px 20px;
+    }
+    header .button {
+        margin-top: 8px;
+    }
+    .contact-left {
+        width: 100%;
+    }
+    .contact-right {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 890px){
+    header .logo {
+        width: 32%;
+    }
+    header .menu {
+        width: 53%;
+    }
+    header .button .btn-1 {
+        padding: 10px 20px;
+    }
+    header .button {
+        margin-top: 8px;
+    }
+}
+@media only screen and (max-width: 870px){
+    header .logo span {
+        font-size: 24.6px;
+    }
+    .box-img {
+        margin-left: 221px;
+    }
+}
+@media only screen and (max-width: 855px){
+    header .logo {
+        width: 100%;
+        text-align: center !important;
+        padding-top: 14px;
+        padding-bottom: 12px;
+    }
+    header .logo a{
+        display: inline-block;
+    }
+    header .menu {
+        width: 80%;
+        text-align: start !important;
+    }
+    header .button {
+        width: 20%;
+        text-align: center !important;
+    }
+    .team h1 {
+        font-size: 2.3rem;
+    }
+
+}
+.hamba-menu {
+    display: none !important;
+}
+.hamba-check{
+    display: none !important;
+}
+@media only screen and (max-width: 768px){
+    header {
+        padding-bottom: 10px;
+    }
+    .hamba-menu {
+        position: absolute;
+        top: 0px;
+        left: 18px;
+        font-size: 35px;
+        pointer-events: none;
+        display: block !important;
+    }
+    .hamba-check {
+        position: absolute;
+        top: 6px;
+        left: 17px;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+        display: block !important;
+    }
+    .hamba-check:checked ~ ul{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+    header .menu ul {
+        margin-top: 55px;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        padding: 0;
+    }
+    header .menu ul li {
+        display: block;
+    }
+    header .menu ul li a {
+        margin: -10px 16px;
+    }
+    .service .service-item {
+        width: 70%;
+        margin: 2% 15%;
+    }
+    .service h2 {
+        font-size: 33px;
+        font-weight: 500;
+    }
+    .price-top h3 {
+        font-size: 2.6rem;
+    }
+    .price-top p {
+        font-size: 20px;
+    }
+    .video-left {
+        width: 100%;
+        margin: 0;
+    }
+    .content-right {
+        width: 100%;
+        margin: 5% 0;
+    }
+    .title-img img {
+        width: 50%;
+        height: 200px;
+    }
+    .box-img {
+        margin-left: 175px;
+    }
+}
+@media only screen and (max-width:700px){
+    .price-top p {
+        font-size: 21px;
+        width: 75%;
+        margin: auto;
+    }
+    .price-top h3 {
+        font-size: 2rem;
+    }
+    .team h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 665px)  {
+    .newsletter input {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .newsletter h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .newsletter button.btn-newsletter {
+        padding: 15px 100px;
+    }
+@media only screen and (max-width: 625px){
+    .team h1 {
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 605px){
+    header .button {
+        width: 25%;
+    }
+    header .menu {
+        width: 75%;
+    }
+    .price-box {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    .title-img img {
+        width: 50%;
+        height: 221px;
+    }
+    .box-img {
+        margin-left: 122px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .service .service-item {
+        width: 100%;
+        margin: 2% 0;
+    }
+    .service h2 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .service p.service-p {
+        font-size: 20px;
+    }
+    
+    .team-box {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .box-img {
+        margin-left: 118px;
+    }
+    .test-box {
+        width: 100%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        margin: auto;
+    }
+    .box-img {
+        margin-left: 187px;
+    }
+    .title-img img {
+        width: 50%;
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 500px){
+    header .button {
+        width: 30%;
+    }
+    header .menu {
+        width: 70%;
+    }
+    .banner button.btn-2 {
+        font-size: 15.8px;
+    }
+    .banner h3 {
+        font-size: 44.6px;
+        margin-bottom: 10px;
+    }
+    .banner h4 {
+        font-size: 22.6px;
+        padding: 0;
+    }
+    .newsletter p {
+        font-size: 1.4rem;
+    }
+    .newsletter h3 {
+        font-size: 2rem;
+    }
+    .title-img img {
+        width: 50%;
+        height: 245px;
+    }
+    .box-img {
+        margin-left: 153px;
+    }
+}
+@media only screen and (max-width: 460px){
+    .title-img img {
+        height: 270px;
+    }
+    .box-img {
+        margin-left: 116px;
+    }
+}
+@media only screen and (max-width: 420px){
+    header .button {
+        width: 35%;
+    }
+    header .menu {
+        width: 65%;
+    }
+    .banner h3 {
+        font-size: 38.6px;
+    }
+    
+}
+@media only screen and (max-width: 370px){
+    header .button {
+        width: 40%;
+    }
+    header .menu {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 325px){
+    header .button .btn-1 {
+        padding: 8px 16px;
+    }
+}

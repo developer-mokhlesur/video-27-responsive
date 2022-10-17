@@ -8,9 +8,7 @@
 img{
     max-width: 100%;
 }
-a{
-    text-decoration: none;
-}
+
 /* Image Section CSS End */
 /* Font Family CSS Link */
 body,h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
@@ -18,7 +16,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
 }
 /* Fixed-Width Section CSS Start */
 .fixed-width{
-    width: 75rem;
+    width: 1200px;
     margin: 0 auto;
     max-width: 100%;
 }
@@ -67,17 +65,18 @@ header .logo span:hover{
 }
 header .menu{
     width: 60%;
+    position: relative;
 }
-header  .menu nav ul{
+header  .menu ul{
     list-style: none;
     margin: 0;
 }
-header  .menu nav ul li{
+header  .menu ul li{
     display: inline-block;
     position: relative;
-    z-index: 99;
+    /* z-index: 99; */
 }
-header  .menu nav ul li a {
+header  .menu ul li a {
     display: inline-block;
     color: #010101;
     font-size: 16px;
@@ -88,17 +87,17 @@ header  .menu nav ul li a {
     transition: 0.2 ease-in-out;
     text-decoration: none;
 }
-header  .menu nav ul li a span {
+header  .menu ul li a span {
     display: inline-block;
     position: relative;
     top: -0.1875rem;
     left: 0;
 }
-header  .menu nav ul li:hover > a{
+header  .menu ul li:hover > a{
     color: #6278df;
 }
 /* DorpDown Section CSS Start */
-header .menu nav ul li ul {
+header .menu ul li ul {
     position: absolute;
     top: 120%;
     left: 0;
@@ -110,17 +109,17 @@ header .menu nav ul li ul {
     visibility: hidden;
     transition: 0.2s ease-in-out;
 }
-header .menu nav ul li:hover ul{
+header .menu ul li:hover ul{
     opacity: 1;
     visibility: visible;
     top: 100%;
 }
-header  .menu nav ul li ul li{
+header .menu ul li ul li{
     display: block;
     text-align: start;
    
 }
-header  .menu nav ul li ul li a {
+header .menu ul li ul li a {
     display: block;
     border-bottom: .0625rem solid #e6e6e6;
     margin: 0;
@@ -153,23 +152,13 @@ header .button .btn-1:hover{
 /* Header Section CSS End */
 /* Banner Section CSS Start  */
 .banner{
-    background-image: url("https://i.ibb.co/pjT5BQy/mbr-4.jpg");
+    background:linear-gradient(#0101016f, #0101016f) ,url("https://i.ibb.co/pjT5BQy/mbr-4.jpg");
     padding:144px 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    z-index: 1;
+    /* z-index: 1; */
     position: relative;
-}
-.banner::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #0101016f;
-    z-index: -1;
 }
 .banner h4 {
     font-size: 25.6px;
@@ -259,7 +248,6 @@ header .button .btn-1:hover{
 }
 .service .service-item:hover{
     box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
-
 }
 .service .service-item .s-icon {
     width: 50px;
@@ -283,3 +271,429 @@ header .button .btn-1:hover{
     line-height: 1.5;
 }
 /* Service CSS End */
+/* Price Section CSS Start  */
+.price{
+    background: #f7f9ff;
+    padding: 2rem 0;
+}
+.price-top h3{
+    font-size: 3.6rem;
+    line-height: 1.1;
+    font-weight: 400;
+}
+.price-top p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    font-weight: 300;
+}
+.price-box{
+    width: 32%;
+    margin-right: 2%;
+    background: #fff;
+    transition: 0.5s;
+}
+.price-box:nth-child(3){
+    margin-right: 0;
+}
+.price-box .p-header{
+    border-bottom: 2px solid #ddd;
+    padding: 3rem 3rem 1rem 3rem;
+    transition: 0.5s;
+}
+.price-box .p-header h5{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.price-box .p-header h2 {
+    font-size: 3.6rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 1.5rem 0;
+}
+.price-box .p-header h2 span {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.price-box .p-header h4 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.price-box .p-header p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-weight: 300;
+}
+.price-box .p-content{
+    padding: 3rem 3rem 1rem 3rem;
+}
+.price-box .p-content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.price-box .p-content ul li {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.price-box .p-content ul li span{
+    float: left;
+    min-width: 40px;
+    color: #6278df;
+}
+.price-box .p-content .button{
+    padding: 2rem;
+}
+.price-box .p-content .button button {
+    background: #fff;
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #7d7d7d;
+    transition: 0.5s;
+}
+.price-box .p-content .button button:hover{
+    background: #000 !important;
+    color: #fff !important;
+}
+.price-box:hover .p-header{
+    background: #6278df;
+    color: #fff;
+}
+.price-box:hover button{
+    background: #6278df !important;
+    color: #fff !important;
+}
+.price-items{
+    margin: auto;
+}
+
+/* Price Section CSS End */
+/* Team Section CSS Start */
+.team{
+    padding-bottom: 1.5rem;
+}
+.team h1 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+.team-box{
+    width: 23.5%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    transition: 0.3s;
+}
+.team-box:nth-child(4){
+    margin-right: 0;
+}
+.team-box:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.team-img img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+.team-bio{
+    padding: 2rem;
+}
+.team-bio h5{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.team-bio span{
+   color: #767676;
+   font-size: 1.3rem;
+   line-height: 1.5;
+   font-weight: 300;
+}
+/* Team Section CSS End */
+/* Newsletter Section CSS Start */
+.newsletter{
+    background: #f7f9ff;
+    padding: 5rem 0;
+}
+.newsletter h3 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+.newsletter p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #767676;
+}
+.newsletter input {
+    border: none;
+    border: 1px solid #c4e4e4;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    width: 32%;
+    padding: 15px 10px;
+    border-radius: 6px;
+    margin-right: 7px;
+}
+.newsletter input:focus{
+    box-shadow: 3px 3px 27px -3px #6278df;
+    outline: none;
+    border: 1px solid #6278df;
+}
+.newsletter button.btn-newsletter {
+    border: none;
+    background: #6278df;
+    padding: 15px 43px;
+    color: #fff;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-left: 20px;
+}
+.newsletter button.btn-newsletter:hover{
+    background: #fff;
+    color: #6278df;
+    border: 2px solid #6278df;
+}
+/* Newsletter Section CSS End */
+/* Title Section CSS Start */
+.title{
+    padding: 3rem 0;
+}
+.title-left{
+    width: 48%;
+    padding: 2rem;
+}
+.title-imtes {
+    padding-top: 13%;
+}
+.title-right{
+    width:48%;
+    padding-left: 2rem;
+}
+.title-left h3 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.title-right p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+    color: #767676;
+}
+.title-img{
+    width: 45%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+  
+}
+.title-img img {
+    width: 50%;
+    float: left;
+    margin-right: 7%;
+    border-radius: 4px 0 0 4px;
+}
+.title-bio {
+    padding-top: 5%;
+}
+.title-bio h4{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.title-bio p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 1rem;
+    color: #767676;
+}
+/* Title Section CSS End */
+/* Testimonial Section CSS Start */
+.testimonial{
+    background: #f7f9ff;
+    padding: 2rem 0;
+}
+.testimonial p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+.testimonial h3{
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+.test-box{
+    width: 32%;
+    margin-right: 2%;
+}
+.box-content{
+    position: relative;
+}
+.box-content p{
+    background: #FFF;
+    padding: 3rem 3.5rem;
+    font-size: 1.3rem;
+    color: #767676;
+    line-height: 1.5;
+    font-weight: 300;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+.box-content p::after {
+    content: "\f10d";
+    font-family: "Fontawesome";
+    position: absolute;
+    top: -3px;
+    left: 50px;
+    color: #cccccc;
+    font-size: 79px;
+    z-index: -1;
+}
+.box-content::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.box-img img {
+    border-radius: 50%;
+    width: 75px;
+    float: left;
+    margin-right: 15px;
+}
+.box-img {
+    margin-left: 108px;
+    margin-top: 37px;
+}
+.test-bio h5 {
+    padding-top: 10px;
+}
+.test-box:nth-child(3){
+    margin-right: 0;
+}
+/* Testimonial Section CSS End */
+/* Contact Section CSS End */
+.contact{
+    padding: 2rem 0;
+}
+.contact-left{
+    width: 48%;
+}
+iframe{
+    width: 100%;
+}
+.contact-right{
+    width: 48%;
+}
+.contact-right h4 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    margin-top: 14px;
+}
+.contact-right p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #7d7d7d;
+    padding-bottom: 1rem;
+}
+.contact-right input.email {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.contact-right input.name {
+    width: 34%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-right: 1%;
+}
+.contact-right input.phone {
+    width: 34%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+.contact-right input:focus{
+    box-shadow: 3px 3px 27px -3px #6278df;
+    outline: 1px solid #6278df;
+}
+.contact-right textarea {
+    width: 70%;
+    padding: 45px 10px;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.contact-right textarea:focus{
+    box-shadow: 3px 3px 27px -3px #6278df;
+    outline: 1px solid #6278df;
+}
+.contact-right button{
+    border: none;
+  width: 70%;;
+    background: #6278df;
+    color: #ffff;
+    padding: 1rem 3rem;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.contact-right button:hover{
+    background: #fff;
+    color: #6278df;
+    border: 2px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+/* Contact Section CSS End */
+/* Footer Section CSS Start */
+footer{
+    padding: 2rem 0;
+}
+footer p{
+    font-size: 18px;
+    color: #000;
+}
+footer span{
+    color: #465052;
+}
+footer span:hover{
+    color: #000;
+}
+/* Footer Section CSS End */
